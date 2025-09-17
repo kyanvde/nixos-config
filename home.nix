@@ -71,6 +71,14 @@
     # EDITOR = "emacs";
   };
 
+  programs.bash = {
+    enable = true;
+    shellAliases = {
+      ll = "ls -l";
+      ".." = "cd ..";
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
