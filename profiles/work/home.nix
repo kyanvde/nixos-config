@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-{
+{ 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "kyan";
@@ -70,12 +70,11 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
-
+  
   programs.bash = {
-    enable = true;
+    enable = false;
     shellAliases = {
-      ll = "ls -l";
-      ".." = "cd ..";
+      shutdown = "shutdown now";
     };
   };
 
